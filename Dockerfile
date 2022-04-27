@@ -8,5 +8,6 @@ RUN apt-get install ffmpeg -y
 WORKDIR /app
 COPY . /app
 RUN npm install
-CMD ["node", "index.js"]
+RUN npm install -g pm2
+CMD ["pm2 start index.js", "pm2 save", "pm2 logs"]
 EXPOSE 6892
