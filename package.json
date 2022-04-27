@@ -55,7 +55,8 @@
     "util": "^0.12.4",
     "yargs": "^17.2.1",
     "xfarr-api": "^1.0.2",
-    "yt-search": "^2.10.2"
+   // "yt-search": "^2.10.2"
+    "api-dhani": "github:BOTZ-DHANI/api-dhani-modules"
   },
   "directories": {
     "lib": "lib",
