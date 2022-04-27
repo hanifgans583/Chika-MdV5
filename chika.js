@@ -1901,7 +1901,6 @@ break
 	    break
 	    case 'yts': case 'ytsearch': {
                 if (!text) throw `Example : ${prefix + command} story wa anime`
-               // let yts = require("yt-search")
                 let apidhani = require("api-dhani");
                 let search = await apidhani.ytSearch(text)
                 let teks = 'YouTube Search\n\n Result From '+text+'\n\n'
@@ -1950,7 +1949,6 @@ break
         break
 	    case 'play': case 'ytplay': {
                 if (!text) throw `Example : ${prefix + command} story wa anime`
-               // let yts = require("yt-search")
                 let apidhani = require("api-dhani");
                 let search = await apidhani.ytSearch(text)
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
